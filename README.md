@@ -240,13 +240,8 @@ df.columns = [c.lower() for c in df.columns]
 
 ---
 
-## ⚠️ Disclaimer
+SMT Divergence occurs when two positively correlated instruments fail to move in sync at key structural levels. This mismatch suggests that "Smart Money" is accumulating or distributing positions in one asset while the other continues to follow retail momentum.
 
-For educational purposes only. Not financial advice.
+Bearish SMT: Asset A makes a Higher High, while Asset B makes a Lower High.
 
----
-
-## 📄 License
-
-MIT License
-
+Bullish SMT: Asset A makes a Lower Low, while Asset B makes a Higher Low.
