@@ -238,6 +238,28 @@ df.columns = [c.lower() for c in df.columns]
 - Python 3.8+
 - pandas · numpy · matplotlib · scipy
 
+
+
+Score 80-100:  🟢 STRONG SIGNAL
+               Enter full position (1% risk)
+               High probability of profit
+               
+Score 70-80:   🟡 GOOD SIGNAL
+               Enter standard position
+               Solid confluence, good risk/reward
+               
+Score 60-70:   🟠 FAIR SIGNAL
+               Optional entry or reduce size
+               Moderate confluence
+               
+Score <60:     🔴 WEAK SIGNAL
+               SKIP or use tight SL only
+               Low confluence, skip if unsure
+
+
+
+
+
 ---
 
 SMT Divergence occurs when two positively correlated instruments fail to move in sync at key structural levels. This mismatch suggests that "Smart Money" is accumulating or distributing positions in one asset while the other continues to follow retail momentum.
