@@ -267,3 +267,10 @@ SMT Divergence occurs when two positively correlated instruments fail to move in
 Bearish SMT: Asset A makes a Higher High, while Asset B makes a Lower High.
 
 Bullish SMT: Asset A makes a Lower Low, while Asset B makes a Higher Low.
+
+
+
+
+
+
+MARKS LONDON AND ASIAN SESSION HIGHS AND LOWS AND THEN TRADE IN NY SESSION 
