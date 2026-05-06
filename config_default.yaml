@@ -1,0 +1,91 @@
+# Smart Money Divergence Strategy - Default Configuration
+# Standard balanced parameters for 1H timeframe
+
+# ============================================================================
+# RSI DIVERGENCE DETECTION
+# ============================================================================
+RSI_PERIOD: 14              # RSI calculation period (7-30, higher = smoother)
+RSI_OB: 65                  # Overbought level (60-75) for bearish divergence
+RSI_OS: 35                  # Oversold level (25-40) for bullish divergence
+
+# ============================================================================
+# STRUCTURE DETECTION (SWING PIVOTS)
+# ============================================================================
+SWING_LOOKBACK: 5           # Bars left/right to identify swing highs/lows (3-10)
+                            # Lower = more pivots, higher = major structure only
+
+# ============================================================================
+# BREAK OF STRUCTURE (BOS) DETECTION
+# ============================================================================
+BOS_LOOKBACK: 20            # Bars back to look for structure level (10-50)
+                            # Lower = recent structure, higher = old structure
+
+# ============================================================================
+# SIGNAL QUALITY FILTERS
+# ============================================================================
+MIN_DIV_RSI_DELTA: 4.0      # Minimum RSI gap to qualify as divergence (2.0-10.0)
+                            # Lower = more signals (higher false positives)
+                            # Higher = fewer signals (only strongest)
+
+MIN_BOS_PIPS: 4             # Minimum BOS magnitude in pips (2-20)
+                            # Lower = catches small breaks
+                            # Higher = only strong breaks
+
+# ============================================================================
+# SIGNAL SCORING THRESHOLDS
+# ============================================================================
+SCORE_THRESHOLD: 65         # Only trade signals with score >= this (50-80)
+                            # Recommended: 65-75
+
+# ============================================================================
+# RISK MANAGEMENT
+# ============================================================================
+RISK_PCT: 0.01              # Risk per trade as % of equity (0.5%-5%)
+                            # 0.01 = 1% per trade (standard)
+                            # 0.005 = 0.5% per trade (conservative)
+                            # 0.02 = 2% per trade (aggressive)
+
+RR: 2.0                     # Reward:Risk ratio (1.5-5.0)
+                            # 2.0 = 2:1 (typical)
+                            # 3.0 = 3:1 (wider profit targets)
+
+STARTING_EQUITY: 10000      # Initial account balance (USD or any currency)
+
+# ============================================================================
+# OPTIONAL ADVANCED PARAMETERS
+# ============================================================================
+# Uncomment to use:
+
+# TRAILING_STOP: false      # Use trailing stop instead of fixed TP
+# TRAILING_PCT: 0.02        # Trail stop by 2% of entry price
+
+# MULTI_TIMEFRAME: false    # Only take signals with higher TF confirmation
+# CONFIRMATION_TF: "4H"     # Higher timeframe for confirmation
+
+# MAX_TRADES_PER_DAY: 3     # Limit daily trades to prevent overtrading
+# MIN_BARS_BETWEEN_TRADES: 50  # Minimum bars between consecutive trades
+
+# ============================================================================
+# CHART OUTPUT SETTINGS
+# ============================================================================
+SAVE_CHART: true            # Save output.png after backtest
+SAVE_SIGNALS: true          # Save signal_log.txt
+SAVE_EQUITY: true           # Save equity_curve.csv
+SAVE_TRADES: true           # Save backtest_report.csv
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# This is the BALANCED configuration suitable for:
+# - 1H timeframe on Forex (EUR/USD, GBP/USD, etc.)
+# - Expected win rate: 50-58%
+# - Expected max drawdown: 20-30%
+# - Trade frequency: 4-6 per week
+#
+# For other timeframes/assets:
+# - See configs/conservative.yaml (low-risk variant)
+# - See configs/aggressive.yaml (high-risk variant)
+#
+# To use this config:
+# python smd_strategy.py --config configs/default.yaml
+# ============================================================================
