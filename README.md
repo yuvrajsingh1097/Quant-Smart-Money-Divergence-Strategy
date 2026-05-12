@@ -179,8 +179,11 @@ smart-money-divergence/
 ├── smd_strategy.py    # All-in-one strategy script
 ├── output.png         # Sample output chart
 └── README.md
-```
 
+
+
+```
+DMKS
 ---
 
 ## ⚙️ Configuration
