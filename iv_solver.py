@@ -309,3 +309,5 @@ if __name__ == "__main__":
     for i, K in enumerate(strikes):
         vols_row = " | ".join([f"{surf['iv'][i,j]:.4f}" for j in range(len(expiries))])
         print(f"  {K:>8.1f} | {vols_row}")
+
+#smart money here mainly compily wiht ict concept of SMC which comapres two differnt currency pairs and helps us identify next move 
