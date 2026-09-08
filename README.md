@@ -38,7 +38,7 @@ SHORT Signal (Retail Trapped Long):
 - **Strategy Stats Panel** — win rate, P&L, drawdown, avg score
 - Full dark-themed 4-panel chart: Price + RSI + Equity Curve + Stats
 
----
+---henegus
 
 
 
