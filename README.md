@@ -7,7 +7,7 @@ A quantitative trading strategy that finds zones where **retail RSI divergence**
 ---
 
 ## 💡 Core Concept
-
+s
 Retail traders use RSI divergence as a reversal signal. Smart Money knows this and uses it to their advantage:
 
 ```
